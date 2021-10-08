@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".ProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/activity_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Profile"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="210dp"
+                android:layout_height="104dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="5dp"
+                android:onClick="handleImageClick">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/floatingActionButton2"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginLeft="30dp"-->
+
+
+<!--                android:clickable="true"-->
+<!--                app:srcCompat="@drawable/ic_photo_camera_black_48dp" />-->
+
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/profile_num"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="20sp"/>
+<!--            <TextView-->
+<!--                android:id="@+id/profile_no_of_healthL"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Health Leave"-->
+<!--                android:textSize="20sp"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/profile_no_of_causualL"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="casual Leave"-->
+<!--                android:textSize="20sp"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/profile_no_of_eduLeav"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Educational -Leave"-->
+<!--                android:textSize="20sp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Info "
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:background="@color/gray"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+    <TableRow
+        android:background="@color/black">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Leave"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="leave taken "
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Health "
+            android:textColor="@color/white"
+            android:padding="5sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/profile_no_of_healthL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:padding="5sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Casual"
+            android:textColor="@color/white"
+            android:padding="5sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/profile_no_of_causualL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/profile_no_of_eduLeav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:textSize="14sp"
+            android:layout_weight = "4"
+            android:gravity="center_horizontal"/>
+
+    </TableRow>
+
+
+
+
+
+</TableLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+          >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/ret_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/ret_email"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="location"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/ret_location"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="role"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/ret_role"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="department"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/ret_department"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/ret_date"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imagview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/applogo"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

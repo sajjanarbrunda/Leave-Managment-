@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_txt"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:hint="Email address"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+
+        />
+    <EditText
+        android:id="@+id/ed_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_txt"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:hint="passward"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:inputType="numberPassword"
+        android:layout_marginTop="20dp"
+
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+/>
+    <TextView
+        android:id="@+id/tv_newuser"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new user? create account"
+        android:textColor="#ED000000"/>
+
+
+
+</LinearLayout>

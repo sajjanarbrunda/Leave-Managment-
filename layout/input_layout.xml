@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:layout_marginTop="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the Detalis"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Full  Name "
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:inputType="text"
+              android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the  email "
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+
+
+                android:textAllCaps="true"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+
+                />
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the  location"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+
+                android:textAllCaps="true"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+
+
+                />
+            <EditText
+                android:id="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the  Role "
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+
+                android:textAllCaps="true"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+
+                />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:entries="@array/department"
+                android:layout_gravity="center"
+                android:outlineSpotShadowColor="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp">
+                    <Button
+                        android:id="@+id/cancle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Cancle"
+                        android:textAllCaps="true"
+                        android:background="@color/black"
+                        android:textStyle="bold"
+
+                        ></Button>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp">
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Save"
+                        android:textAllCaps="true"
+                        android:background="@color/black"
+                        android:textStyle="bold"
+
+                        ></Button>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

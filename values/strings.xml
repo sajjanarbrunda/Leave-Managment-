@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Get_Leave</string>
+    <string-array name="department">
+        <item>Select the department</item>
+        <item>Information Science and Engg</item>
+        <item>Computer Science and Engg </item>
+        <item>Civil Engg</item>
+        <item>Mechnical Engg</item>
+        <item>ELecterical and Communcation Engg</item>
+        <item>ELectrical Engg</item>
+    </string-array>
+
+
+</resources>
